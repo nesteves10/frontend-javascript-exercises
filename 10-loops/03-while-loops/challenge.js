@@ -20,7 +20,6 @@ module.exports.sumNumbers = function(myArray){
     i++;
   }
   return sum;
-
   var count = 0;
 
 while (count < 10){
