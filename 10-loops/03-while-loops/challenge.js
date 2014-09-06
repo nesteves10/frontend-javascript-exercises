@@ -3,6 +3,7 @@ module.exports.stream = function(conditionalFn, actionFn){
 
     return true;
   }
+<<<<<<< HEAD
   var count = 10;
 
   do {
@@ -20,5 +21,26 @@ module.exports.sumNumbers = function(myArray){
     i++;
   }
   return sum;
+=======
+
+  var count = 0;
+
+while (count < 10){
+  actionFn();
+    // console.log(count);
+    count++;
+    !conditionalFn();
+}
+};
+
+module.exports.sumNumbers = function(myArray) {
+ var sum = 0;
+ var i = 0;
+ while(i < myArray.length){
+   sum = sum + myArray[i];
+   i++;
+ }
+ return sum;
+>>>>>>> 7b3141f7d586a739059e2c403260033b2cb7f25c
 };
 
